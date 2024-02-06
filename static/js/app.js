@@ -111,12 +111,24 @@ function buildBarChart(sample) {
             y: yticks,
             text: labels,
             type: "bar",
-            orientation: "h"
+            orientation: "h",
+            marker: {
+                color: 'green',
+                size: 20
+            }
         };
 
         // Setup the layout
         let layout = {
-            title: "Top 10 OTUs Present"
+            title: "Top 10 OTUs Present",
+            paper_bgcolor: 'black',
+            plot_bgcolor: 'black',
+            font: {
+                family: 'Verdana, sans-serif',
+                size: 15,
+                color: 'orange',
+                weight: 'bold'
+            }
         };
 
         // Call Plotly to plot the bar chart
@@ -165,6 +177,12 @@ function buildBubbleChart(sample) {
             title: "Bacteria Per Sample",
             hovermode: "closest",
             xaxis: {title: "OTU ID"},
+            paper_bgcolor: 'black',
+            font: {
+                family: "Arial, sans-serif",
+                size: 14,
+                color: 'Teal'
+            }
         };
 
         // Call Plotly to plot the bubble chart
