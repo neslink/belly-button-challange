@@ -2,7 +2,7 @@
 
 Module 14 Challange
 
-<img width = "1000" alt="Screenshot_dashboard src="https://github.com/neslink/belly-button-challange/blob/main/Screenshot_dashboard.png?raw=true">
+![Screenshot_Dashboard](https://raw.githubusercontent.com/neslink/belly-button-challange/main/Screenshot_dashboard.png)
 
 ## Deployment
 
