@@ -148,7 +148,7 @@ function buildBubbleChart(sample) {
         console.log(otu_ids,otu_labels,sample_values);
         
         // Set up the trace for bubble chart
-        let trace1 = {
+        let bubba = {
             x: otu_ids,
             y: sample_values,
             text: otu_labels,
@@ -156,7 +156,7 @@ function buildBubbleChart(sample) {
             marker: {
                 size: sample_values,
                 color: otu_ids,
-                colorscale: "Earth"
+                colorscale: "Picnic"
             }
         };
 
@@ -168,7 +168,7 @@ function buildBubbleChart(sample) {
         };
 
         // Call Plotly to plot the bubble chart
-        Plotly.newPlot("bubble", [trace1], layout)
+        Plotly.newPlot("bubble", [bubba], layout)
     });
 };
 
